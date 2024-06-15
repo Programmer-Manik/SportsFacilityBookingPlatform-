@@ -7,7 +7,7 @@ import sendResponse from '../utils/sendResponse';
 
 const auth = (...requiredRoles: string[]) => {
   return catchAsync(async (req, res, next) => {
-    const token = req.headers.authorization?.split(',')[1];
+    const token = req.headers.authorization?.split(' ')[1];
     // if the token exists
     if (!token) {
       sendResponse(res, {
