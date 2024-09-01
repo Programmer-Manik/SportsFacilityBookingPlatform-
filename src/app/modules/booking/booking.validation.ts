@@ -10,6 +10,7 @@ const BookingValidationSchema = z.object({
       message: 'End time must be in HH:MM format',
     }),
     facility: z.string(),
+    user: z.string(),
   }),
 });
 

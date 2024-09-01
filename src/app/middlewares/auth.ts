@@ -30,7 +30,7 @@ const auth = (...requiredRoles: string[]) => {
     // check if the token is valid
     jwt.verify(
       solidToken as string,
-      config.JWT_ACCESS_SECRET as string,
+      config.jwt_access_secret as string,
       function (err, decoded) {
         if (err) {
           throw new AppError(httpStatus.UNAUTHORIZED, 'You are not authorized');

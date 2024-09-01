@@ -7,6 +7,7 @@ const facilitySchema = new Schema<TFacility>({
   pricePerHour: { type: Number, required: true },
   location: { type: String, required: true },
   isDeleted: { type: Boolean, default: false },
+  image: { type: String, require: true },
 });
 
 export const Facility = model<TFacility>('Facility', facilitySchema);

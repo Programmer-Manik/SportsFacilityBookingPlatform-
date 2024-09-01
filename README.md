@@ -1,10 +1,13 @@
 # Sports-Facility-Booking-Platform
 
-## Live URL : 
+Welcome to the Sports Facility Booking Platform! This project allows users to book sports facilities with ease. Below you will find all the necessary information to set up and use the application.
 
-Access the live application at: [SportsFacilityBookingPlatformLiveURL](https://sportsfacilitybookingplatform.vercel.app/)
+## Live URL
+
+Access the live application at: [Sports Facility Booking Platform Live URL](https://sport-facilify-modify.vercel.app/)
 
 ## Features
+
 - **User Signup:** Register new users with secure password hashing.
 - **User Login:** Authenticate users and provide a JWT token for session management.
 - **Facility Management (Admin Only):**
@@ -23,6 +26,7 @@ Access the live application at: [SportsFacilityBookingPlatformLiveURL](https://s
 - **No Data Found Response:** Handles cases where no matching data is found.
 
 ## Technology Stack
+
 - **Programming Language:** TypeScript
 - **Web Framework:** Express.js
 - **Database:** MongoDB with Mongoose
@@ -30,11 +34,11 @@ Access the live application at: [SportsFacilityBookingPlatformLiveURL](https://s
 - **Security:** Bcrypt for password hashing
 - **Environment Management:** dotenv for environment variables
 
-
+## Getting Started
 
 ### Prerequisites
 
-- Node.js 
+- Node.js (v14 or later)
 - MongoDB
 - npm (Node Package Manager)
 
@@ -43,9 +47,9 @@ Access the live application at: [SportsFacilityBookingPlatformLiveURL](https://s
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/Programmer-Manik/SportsFacilityBookingPlatform.git
+   git clone https://github.com/jonycmtt/Sports-Facility-Booking-Platform.git
 
-   cd SportsFacilityBookingPlatform
+   cd Sports-Facility-Booking-Platform
 
    ```
 
@@ -65,11 +69,12 @@ Access the live application at: [SportsFacilityBookingPlatformLiveURL](https://s
    BCRYPT_SALT_ROUNDS=12
    DEFAULT_PASS=your_default_password
    JWT_ACCESS_SECRET=your_jwt_secret
+   STRIPE_SECRET_KEY= your stripe payment secret key
 
    ```
 
 4. **Run the application:**
 
    ```sh
-   npm run dev
+   npm run start:dev
    ```

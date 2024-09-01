@@ -9,6 +9,12 @@ import config from '../../config';
 const signUpIntoDB = async (payload: TUser) => {
   return await User.create(payload);
 };
+const getAllUsersIntoDB = async () => {
+  return await User.find();
+};
+const getSingleUsersIntoDB = async (id: string) => {
+  return await User.findById(id);
+};
 
 const loginFromDB = async (email: string, password: string) => {
   const user = await User.findOne({ email });
@@ -28,12 +34,11 @@ const loginFromDB = async (email: string, password: string) => {
   // create token send to client
 
   const jwtPayload = {
-    userId: user._id,
-    userEmail: user.email,
     role: user.role,
+    user,
   };
 
-  const accessToken = jwt.sign(jwtPayload, config.JWT_ACCESS_SECRET as string, {
+  const accessToken = jwt.sign(jwtPayload, config.jwt_access_secret as string, {
     expiresIn: '10d',
   });
 
@@ -43,4 +48,9 @@ const loginFromDB = async (email: string, password: string) => {
   };
 };
 
-export const UserServices = { signUpIntoDB, loginFromDB };
+export const UserServices = {
+  signUpIntoDB,
+  loginFromDB,
+  getAllUsersIntoDB,
+  getSingleUsersIntoDB,
+};

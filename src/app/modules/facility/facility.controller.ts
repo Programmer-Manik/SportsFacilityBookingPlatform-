@@ -15,7 +15,7 @@ const createFacility = catchAsync(async (req, res) => {
 });
 
 const getAllFacility = catchAsync(async (req, res) => {
-  const result = await FacilityServices.getFacilityFromDB();
+  const result = await FacilityServices.getFacilityFromDB(req.query);
 
   const existsData = await Facility.find();
   if (existsData && existsData.length === 0) {

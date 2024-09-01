@@ -5,8 +5,7 @@ import { BookingServices } from './booking.service';
 import { Booking } from './booking.model';
 
 const createBooking = catchAsync(async (req, res) => {
-  const { userId } = req.user;
-  const result = await BookingServices.createBookingIntoDB(userId, req.body);
+  const result = await BookingServices.createBookingIntoDB(req.body);
 
   sendResponse(res, {
     statusCode: httpStatus.OK,
