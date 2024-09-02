@@ -76,5 +76,5 @@ Access the live application at: [Sports Facility Booking Platform Live URL](http
 4. **Run the application:**
 
    ```sh
-   npm run start:dev
+   npm run dev
    ```
