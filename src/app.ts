@@ -14,7 +14,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: ['http://localhost:5173', 'https://sports-facility-nu.vercel.app'],
+    origin: ['http://localhost:5173', 'https://sports-facility-booking-server-gules.vercel.app'],
     credentials: true,
   }),
 );
