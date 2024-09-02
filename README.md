@@ -4,7 +4,7 @@ Welcome to the Sports Facility Booking Platform! This project allows users to bo
 
 ## Live URL
 
-Access the live application at: [Sports Facility Booking Platform Live URL](https://sport-facilify-modify.vercel.app/)
+Access the live application at: [Sports Facility Booking Platform Live URL](https://sports-facility-booking-server-gules.vercel.app)
 
 ## Features
 
@@ -47,9 +47,9 @@ Access the live application at: [Sports Facility Booking Platform Live URL](http
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/jonycmtt/Sports-Facility-Booking-Platform.git
+   git clone https://github.com/Programmer-Manik/SportsFacilityBooking_Server.git
 
-   cd Sports-Facility-Booking-Platform
+   cd SportsFacilityBooking_Server
 
    ```
 
